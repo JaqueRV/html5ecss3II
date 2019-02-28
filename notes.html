@@ -1,0 +1,52 @@
+Qual o valor da medida em?
+
+O tamanho de fonte do elemento no qual for usada.
+Para exemplificar:
+
+p {
+    font-size: 20px;
+    margin: 1em;
+}
+
+Ou seja, os parágrafos terão margem de 20 pixels.
+
+//
+
+Qual o valor da medida rem?
+
+O tamanho de fonte do elemento html ou, se não houver tamanho de fonte definido neste elemento, o tamanho de fonte padrão do navegador.
+
+No exemplo abaixo, 1rem vale 25px:
+
+html {
+    font-size: 25px;
+}
+
+p {
+    margin: 1rem;
+}
+
+Logo, todos os parágrafos nesse exemplo terão 25 pixels de margem.
+
+
+//
+
+Qual o valor da medida ch?
+
+A largura do caractere "0" (zero) da fonte utilizada. 
+
+Vale notar que existem algumas fontes em que todos os caracteres têm a mesma largura, que são as fontes conhecidas como monoespaçadas. Quando uma fonte dessas é usada, a medida ch permite definir com exatidão quantos caracteres vão aparecer por linha de texto do elemento em que for usada.
+
+//
+
+Position Absolute
+
+ Isso acontece porque, como vimos no curso anterior, o position absolute é relativo à página do navegador.
+
+  O position absolute, na verdade, não é sempre relativo à página. Ele é relativo ao primeiro pai que possui um position definido:
+
+<html>
+    <body>   <- [position: relative/absolute/fixed (referência)]
+        <div>   <- [position: absolute]
+
+Então, lembrando, o absolute é sempre relativo ao primeiro pai dele que possuir um position definido. Se não definirmos para o pai, o filho estará posicionado em relação à tela do navegador.
